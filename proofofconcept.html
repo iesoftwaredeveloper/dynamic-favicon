@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dynamic favicon POC</title>
+    <link rel="shortcut icon" href="" />
+</head>
+
+<body>
+    <style>
+        img.icon {
+            width: 1.75em;
+        }
+    </style>
+    <h1>Dynamic favicon Proof of Concept</h1>
+    <section>
+        <div>
+            <p>This is a proof of concept to show how you can dynamically change the favicon.</p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>Select an emoji</h2>
+            <button onclick="changeFaviconEmoji('📅');">📅</button>
+            <button onclick="changeFaviconEmoji('🎉');">🎉</button>
+            <button onclick="changeFaviconEmoji('🎄');">🎄</button>
+            <button onclick="changeFaviconEmoji('❤️');">❤️</button>
+            <button onclick="changeFaviconEmoji('🥺');">🥺</button>
+            <button onclick="changeFaviconEmoji('✨');">✨</button>
+            <button onclick="changeFaviconEmoji('🎅');">🎅</button>
+            <button onclick="changeFaviconEmoji('🎁');">🎁</button>
+            <button onclick="changeFaviconEmoji('😂');">😂</button>
+            <button onclick="changeFaviconEmoji('🔥');">🔥</button>
+            <button onclick="changeFaviconEmoji('🙈');">🙈</button>
+            <button onclick="changeFaviconEmoji('🙉');">🙉</button>
+            <button onclick="changeFaviconEmoji('🙊');">🙊</button>
+            <button onclick="changeFaviconEmoji('💯');">💯</button>
+            <button onclick="changeFaviconEmoji('🦄');">🦄</button>
+        </div>
+        <div>
+            <h2>Pick a time</h2>
+            <button onclick="changeFaviconEmoji('🕛');">🕛</button>
+            <button onclick="changeFaviconEmoji('🕧');">🕧</button>
+            <button onclick="changeFaviconEmoji('🕐');">🕐</button>
+            <button onclick="changeFaviconEmoji('🕜');">🕜</button>
+            <button onclick="changeFaviconEmoji('🕑');">🕑</button>
+            <button onclick="changeFaviconEmoji('🕝');">🕝</button>
+            <button onclick="changeFaviconEmoji('🕒');">🕒</button>
+            <button onclick="changeFaviconEmoji('🕞');">🕞</button>
+            <button onclick="changeFaviconEmoji('🕓');">🕓</button>
+            <button onclick="changeFaviconEmoji('🕟');">🕟</button>
+            <button onclick="changeFaviconEmoji('🕔');">🕔</button>
+            <button onclick="changeFaviconEmoji('🕠');">🕠</button>
+            <button onclick="changeFaviconEmoji('🕕');">🕕</button>
+            <button onclick="changeFaviconEmoji('🕡');">🕡</button>
+            <button onclick="changeFaviconEmoji('🕖');">🕖</button>
+            <button onclick="changeFaviconEmoji('🕢');">🕢</button>
+            <button onclick="changeFaviconEmoji('🕗');">🕗</button>
+            <button onclick="changeFaviconEmoji('🕣');">🕣</button>
+            <button onclick="changeFaviconEmoji('🕘');">🕘</button>
+            <button onclick="changeFaviconEmoji('🕤');">🕤</button>
+            <button onclick="changeFaviconEmoji('🕙');">🕙</button>
+            <button onclick="changeFaviconEmoji('🕥');">🕥</button>
+            <button onclick="changeFaviconEmoji('🕚');">🕚</button>
+            <button onclick="changeFaviconEmoji('🕦');">🕦</button>
+        </div>
+        <div>
+            <h2>How about a date?</h2>
+            <p>Today's date is <img class="icon" id="current-date" /></p>
+            <img class="icon" id="dom-1" onclick="changeFaviconSvg(this);"
+                src="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%237d6ee7%22></rect><path fill=%22%23fff%22 d=%22M37.76 26.91L35.65 21.77L50.02 16.71L54.68 16.71L54.68 77.05L64.35 77.05L64.35 83.29L37.45 83.29L37.45 77.05L48.18 77.05L48.18 23.87L37.76 26.91Z%22></path></svg>" />
+            <img class="icon" id="dom-2" onclick="changeFaviconSvg(this);"
+                src="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%237d6ee7%22></rect><path fill=%22%23fff%22 d=%22M70.17 83.55L28.91 83.55Q28.91 77.62 29.48 75.95Q30.05 74.28 30.75 72.52Q31.46 70.76 32.49 69.34Q33.52 67.91 35.08 65.95Q36.64 64.00 38.71 62.11L38.71 62.11Q43.76 57.40 47.28 54.81L47.28 54.81L55.36 48.92Q58.53 46.68 59.73 45.41Q60.94 44.13 61.91 42.90Q62.88 41.67 63.36 40.49L63.36 40.49Q64.59 37.59 64.59 34.51L64.59 34.51Q64.59 28.84 61.38 25.37Q58.17 21.90 51.58 21.90L51.58 21.90Q43.36 21.90 39.37 28.53L39.37 28.53Q37.30 32.05 37.30 35.74L37.30 35.74L30.80 35.74Q30.80 30.25 33.85 25.76Q36.90 21.28 41.83 18.86Q46.75 16.45 52.07 16.45Q57.38 16.45 61.69 18.82Q66.00 21.19 68.54 25.37Q71.09 29.54 71.09 34.51L71.09 34.51Q71.09 39.48 68.90 43.03L68.90 43.03Q66.48 46.99 64.06 49.10Q61.65 51.21 60.28 52.31L60.28 52.31L56.64 55.08Q36.03 70.41 36.03 77.31L36.03 77.31L70.17 77.31L70.17 83.55Z%22></path></svg>" />
+            <img class="icon" id="dom-9" onclick="changeFaviconSvg(this);"
+                src="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%237d6ee7%22></rect><path fill=%22%23fff%22 d=%22M29.30 37.98L29.30 37.98Q29.30 31.74 32.51 26.25L32.51 26.25Q36.07 20.23 42.27 17.81L42.27 17.81Q45.61 16.49 49.56 16.49L49.56 16.49Q59.40 16.49 65.05 24.47Q70.70 32.44 70.70 46.77L70.70 46.77Q70.70 64.26 63.75 73.88Q56.81 83.51 44.59 83.51L44.59 83.51Q41.52 83.51 37.92 82.10Q34.31 80.70 32.99 79.07L32.99 79.07L35.54 74.37Q40.73 78.06 45.43 78.06L45.43 78.06Q53.47 78.06 58.83 70.63Q64.19 63.21 64.77 49.67L64.77 49.67Q64.72 49.71 64.22 50.46Q63.71 51.21 63.34 51.69Q62.96 52.18 62.15 53.05Q61.34 53.93 60.55 54.57Q59.76 55.21 58.55 55.95Q57.34 56.70 56.06 57.19L56.06 57.19Q52.99 58.28 49.52 58.28L49.52 58.28Q40.60 58.28 34.95 52.72Q29.30 47.17 29.30 37.98ZM35.81 38.02Q35.81 44.88 39.54 48.86Q43.28 52.83 49.52 52.83L49.52 52.83Q56.33 52.83 60.42 47.78L60.42 47.78Q62.83 44.79 64.02 39.61L64.02 39.61Q63.05 26.16 54.35 22.82L54.35 22.82Q52.07 21.94 49.87 21.94Q47.67 21.94 45.83 22.47Q43.98 23.00 42.16 24.23Q40.33 25.46 38.93 27.21L38.93 27.21Q35.81 31.17 35.81 38.02Z%22></path></svg>" />
+            <img class="icon" id="dom-12" onclick="changeFaviconSvg(this);"
+                src="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%237d6ee7%22></rect><path fill=%22%23fff%22 d=%22M11.88 27.17L9.77 22.03L24.14 16.98L28.80 16.98L28.80 77.31L38.46 77.31L38.46 83.55L11.57 83.55L11.57 77.31L22.29 77.31L22.29 24.14L11.88 27.17ZM89.31 83.55L48.04 83.55Q48.04 77.62 48.62 75.95Q49.19 74.28 49.89 72.52Q50.59 70.76 51.63 69.34Q52.66 67.91 54.22 65.95Q55.78 64.00 57.84 62.11L57.84 62.11Q62.90 57.40 66.41 54.81L66.41 54.81L74.50 48.92Q77.66 46.68 78.87 45.41Q80.08 44.13 81.05 42.90Q82.01 41.67 82.50 40.49L82.50 40.49Q83.73 37.59 83.73 34.51L83.73 34.51Q83.73 28.84 80.52 25.37Q77.31 21.90 70.72 21.90L70.72 21.90Q62.50 21.90 58.50 28.53L58.50 28.53Q56.44 32.05 56.44 35.74L56.44 35.74L49.93 35.74Q49.93 30.25 52.99 25.76Q56.04 21.28 60.96 18.86Q65.89 16.45 71.20 16.45Q76.52 16.45 80.83 18.82Q85.13 21.19 87.68 25.37Q90.23 29.54 90.23 34.51L90.23 34.51Q90.23 39.48 88.03 43.03L88.03 43.03Q85.62 46.99 83.20 49.10Q80.78 51.21 79.42 52.31L79.42 52.31L75.77 55.08Q55.16 70.41 55.16 77.31L55.16 77.31L89.31 77.31L89.31 83.55Z%22></path></svg>" />
+            <img class="icon" onclick="changeFaviconSvg(this);"
+                src="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%237d6ee7%22></rect><path fill=%22%23fff%22 d=%22M13.42 26.67L11.31 21.52L25.68 16.47L30.33 16.47L30.33 76.81L40.00 76.81L40.00 83.05L13.11 83.05L13.11 76.81L23.83 76.81L23.83 23.63L13.42 26.67ZM49.45 70.92L49.45 70.92L53.76 67.62Q54.55 70.08 57.14 72.81L57.14 72.81Q62.15 78.08 67.64 78.08L67.64 78.08Q70.37 78.08 72.83 76.81Q75.29 75.53 76.83 74.13Q78.37 72.72 79.55 70.87L79.55 70.87Q82.19 66.66 82.19 59.67L82.19 59.67Q82.19 49.03 75.55 45.34L75.55 45.34Q72.35 43.54 68.48 43.54Q64.61 43.54 61.23 46.35Q57.84 49.17 57.54 51.32L57.54 51.32L51.56 51.32L51.56 16.47L85.05 16.47L85.05 21.92L58.06 21.92L58.06 42.13Q60.74 39.58 65.05 38.53L65.05 38.53Q66.90 38.09 68.79 38.09L68.79 38.09Q77.44 38.09 83.07 44.07Q88.69 50.04 88.69 60.13Q88.69 70.21 82.89 76.87Q77.09 83.53 67.86 83.53L67.86 83.53Q59.60 83.53 53.41 77.07L53.41 77.07Q50.24 73.82 49.45 70.92Z%22></path></svg>" />
+        </div>
+    </section>
+</body>
+<script>
+    // This entire concept was inspired by the article written here: https://css-tricks.com/how-to-create-a-favicon-that-changes-automatically/
+    
+    // Thanks to https://formito.com/tools/favicon
+    const faviconEmojiHref = emoji =>
+        `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2280%22>${emoji}</text></svg>`;
+
+    const changeFaviconSvg = svg => {
+        // Ensure we have access to the document, i.e. we are in the browser.
+        if (typeof window === 'undefined') return
+
+        const link =
+            window.document.querySelector("link[rel*='icon']") ||
+            window.document.createElement("link")
+        link.type = "image/svg+xml"
+        link.rel = "shortcut icon"
+        link.href = svg.src;
+
+        window.document.getElementsByTagName("head")[0].appendChild(link)
+    };
+
+    // Thanks to https://css-tricks.com/how-to-create-a-favicon-that-changes-automatically/
+    const changeFaviconEmoji = emoji => {
+        // Ensure we have access to the document, i.e. we are in the browser.
+        if (typeof window === 'undefined') return
+
+        const link =
+            window.document.querySelector("link[rel*='icon']") ||
+            window.document.createElement("link")
+        link.type = "image/svg+xml"
+        link.rel = "shortcut icon"
+        link.href = faviconEmojiHref(emoji)
+
+        window.document.getElementsByTagName("head")[0].appendChild(link)
+    };
+
+    const currentDOM = () => {
+        const time = new Date(Date.now());
+        const dom = time.getDate();
+        return {
+            "1": "dom-1",
+            "9": "dom-9"
+        } [`${dom}`]
+    };
+
+    const currentDOMSvg = () => {
+        const time = new Date(Date.now());
+        const dom = time.getDate();
+        return {
+            "1": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%237d6ee7%22></rect><path fill=%22%23fff%22 d=%22M37.76 26.91L35.65 21.77L50.02 16.71L54.68 16.71L54.68 77.05L64.35 77.05L64.35 83.29L37.45 83.29L37.45 77.05L48.18 77.05L48.18 23.87L37.76 26.91Z%22></path></svg>",
+            "9": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%237d6ee7%22></rect><path fill=%22%23fff%22 d=%22M29.30 37.98L29.30 37.98Q29.30 31.74 32.51 26.25L32.51 26.25Q36.07 20.23 42.27 17.81L42.27 17.81Q45.61 16.49 49.56 16.49L49.56 16.49Q59.40 16.49 65.05 24.47Q70.70 32.44 70.70 46.77L70.70 46.77Q70.70 64.26 63.75 73.88Q56.81 83.51 44.59 83.51L44.59 83.51Q41.52 83.51 37.92 82.10Q34.31 80.70 32.99 79.07L32.99 79.07L35.54 74.37Q40.73 78.06 45.43 78.06L45.43 78.06Q53.47 78.06 58.83 70.63Q64.19 63.21 64.77 49.67L64.77 49.67Q64.72 49.71 64.22 50.46Q63.71 51.21 63.34 51.69Q62.96 52.18 62.15 53.05Q61.34 53.93 60.55 54.57Q59.76 55.21 58.55 55.95Q57.34 56.70 56.06 57.19L56.06 57.19Q52.99 58.28 49.52 58.28L49.52 58.28Q40.60 58.28 34.95 52.72Q29.30 47.17 29.30 37.98ZM35.81 38.02Q35.81 44.88 39.54 48.86Q43.28 52.83 49.52 52.83L49.52 52.83Q56.33 52.83 60.42 47.78L60.42 47.78Q62.83 44.79 64.02 39.61L64.02 39.61Q63.05 26.16 54.35 22.82L54.35 22.82Q52.07 21.94 49.87 21.94Q47.67 21.94 45.83 22.47Q43.98 23.00 42.16 24.23Q40.33 25.46 38.93 27.21L38.93 27.21Q35.81 31.17 35.81 38.02Z%22></path></svg>"
+        } [`${dom}`]
+    };
+
+    const setTodayIcon = () => {
+        document.getElementById('current-date').setAttribute("src", currentDOMSvg());
+    };
+
+    setTodayIcon();
+    changeFaviconSvg(document.getElementById(currentDOM()));
+</script>
+
+</html>
