@@ -5,11 +5,13 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
+<!--
+  <a href="https://github.com/iesoftwaredeveloper/dynamic-favicon">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
+-->
 
-  <h3 align="center">pdynamic-favicon</h3>
+  <h3 align="center">dynamic-favicon</h3>
 
   <p align="center">
     Proof of concept for dynamically changing the favicon of a page
@@ -17,11 +19,11 @@
     <a href="https://github.com/iesoftwaredeveloper/dynamic-favicon"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/iesoftwaredeveloper/dynamic-favicon">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/iesoftwaredeveloper/dynamic-favicon/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/iesoftwaredeveloper/dynamic-favicon/issues">Request Feature</a>
   </p>
 </p>
 
@@ -60,18 +62,17 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+<p>
+I saw an <a href="">article </a> that described how to dynamically set the favicon on a page.  It sounded like an interesting idea so I decided to give it a try.  This is the result of that attempt.  In addition to the favicon, I also included how to dynamically set an svg image within the page.
+</p>
 
+<p>
+The article described how to change the favicon based upon the time of day.  I decided to allow for the change to occur based upon clicking an image that you wanted or based upon the date of the month.  <em>Note: I didn't finish the dates of the months, so if you happen to load the page on a day that is not included you will get a failure in the console.</em>
+</p>
 
 ### Built With
 
 * []()
-* []()
-* []()
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -80,38 +81,26 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+There are no pre-requisites. This is built with a static html page and simple javascript.
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/iesoftwaredeveloper/dynamic-favicon.git
    ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+Simply open the html file in your favorite browser.
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/iesoftwaredeveloper/dynamic-favicon/issues) for a list of proposed features (and known issues).
 
 
 
@@ -138,20 +127,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/iesoftwaredeveloper/dynamic-favicon](https://github.com/iesoftwaredeveloper/dynamic-favicon)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-
-* []()
-* []()
-* []()
-
-
 
 
 
