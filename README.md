@@ -15,9 +15,11 @@
 
   <p align="center">
     Proof of concept for dynamically changing the favicon of a page
+<!--
     <br />
     <a href="https://github.com/iesoftwaredeveloper/dynamic-favicon"><strong>Explore the docs »</strong></a>
     <br />
+-->
     <br />
     <a href="https://github.com/iesoftwaredeveloper/dynamic-favicon">View Demo</a>
     ·
@@ -140,8 +142,8 @@ Project Link: [https://github.com/iesoftwaredeveloper/dynamic-favicon](https://g
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/iesoftwaredeveloper/dynamic-favicon?style=flat
 [contributors-url]: https://github.com/iesoftwaredeveloper/dynamic-favicon/graphs/contributors
-[license-shield]: https://img.shields.io/github/license/iesoftwaredeveloper/dynamic-favicon?style=flat
-[license-url]: https://github.com/iesoftwaredeveloper/dynamic-favicon/LICENSE.txt
+[license-shield]: https://img.shields.io/github/license/iesoftwaredeveloper/dynamic-favicon?label=License
+[license-url]: https://github.com/iesoftwaredeveloper/dynamic-favicon/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/robertlittle
 
