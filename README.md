@@ -1,7 +1,4 @@
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -12,12 +9,12 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">project_title</h3>
+  <h3 align="center">pdynamic-favicon</h3>
 
   <p align="center">
-    project_description
+    Proof of concept for dynamically changing the favicon of a page
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/iesoftwaredeveloper/dynamic-favicon"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
@@ -160,9 +157,10 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-https://img.shields.io/github/contributors/iesoftwaredeveloper/dynamic-favicon?style=plastic
 [contributors-shield]: https://img.shields.io/github/contributors/iesoftwaredeveloper/dynamic-favicon?style=flat
-[contributors-url]: https://github.com/insomniaware/dynamic-favicon/graphs/contributors
+[contributors-url]: https://github.com/iesoftwaredeveloper/dynamic-favicon/graphs/contributors
+[license-shield]: https://img.shields.io/github/license/iesoftwaredeveloper/dynamic-favicon?style=flat
+[license-url]: https://github.com/iesoftwaredeveloper/dynamic-favicon/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/robertlittle
 
